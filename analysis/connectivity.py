@@ -7,9 +7,6 @@ fname = '../dataCollection/historicalDB.json'
 with open(fname) as fin:
     db = load(fin)
 
-# Choose year to look at
-year = 1994
-
 def getConnWk(year):
     # Generate list of teams for indexing adjacency matrix ...
     teams = [str(team) for team in sorted(db.iterkeys())
